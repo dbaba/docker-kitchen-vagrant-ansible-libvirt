@@ -19,7 +19,7 @@ A docker image for running test kitchen with Vagrant and libvirt
     (host) $ docker run -ti --rm \
         --privileged=true --net=host \
         -v $(pwd):/app \
-        -v $(pwd)/.vagrant.d/boxes:/root/.vagrant.d/boxes \
+        -v ${HOME}/.vagrant.d/boxes:/root/.vagrant.d/boxes \
         -v /var/lib/libvirt:/var/lib/libvirt \
         -v /var/run/libvirt:/var/run/libvirt \
         dbaba/docker-kitchen-vagrant-ansible-libvirt kitchen test
