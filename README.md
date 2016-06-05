@@ -69,3 +69,8 @@ You can prepend a relative path to a vagrant file name, e.g. files/qemu-workarou
  * [docker-vagrant-libvirt](https://github.com/twiest/docker-vagrant-libvirt)
  * [vagrant-libvirt](https://github.com/vagrant-libvirt/vagrant-libvirt)
  * [Vagrantfile.erb template file in kitchen-vagrant](https://github.com/test-kitchen/kitchen-vagrant/blob/master/templates/Vagrantfile.erb)
+
+# Revision History
+
+* 1.0.0
+    - Initial Release
