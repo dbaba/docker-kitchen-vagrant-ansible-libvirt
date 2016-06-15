@@ -72,5 +72,8 @@ You can prepend a relative path to a vagrant file name, e.g. files/qemu-workarou
 
 # Revision History
 
+* 1.0.1
+    - Fix an issue where gem complained of building native extensions
+
 * 1.0.0
     - Initial Release
