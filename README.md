@@ -19,7 +19,7 @@ A docker image for running test kitchen with Vagrant and libvirt
     (host) $ docker run -ti --rm \
         --privileged=true --net=host \
         -v $(pwd):/app \
-        -v $(pwd)/.vagrant.d/boxes:/root/.vagrant.d/boxes \
+        -v ${HOME}/.vagrant.d/boxes:/root/.vagrant.d/boxes \
         -v /var/lib/libvirt:/var/lib/libvirt \
         -v /var/run/libvirt:/var/run/libvirt \
         dbaba/docker-kitchen-vagrant-ansible-libvirt kitchen test
@@ -71,6 +71,9 @@ You can prepend a relative path to a vagrant file name, e.g. files/qemu-workarou
  * [Vagrantfile.erb template file in kitchen-vagrant](https://github.com/test-kitchen/kitchen-vagrant/blob/master/templates/Vagrantfile.erb)
 
 # Revision History
+
+* 1.0.1
+    - Fix an issue where gem complained of building native extensions
 
 * 1.0.0
     - Initial Release

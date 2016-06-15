@@ -16,6 +16,7 @@ COPY ./Gemfile /tmp/Gemfile
 
 RUN ( \
   yum install -y ruby epel-release && \
+  yum groupinstall -y "Development Tools" && \
   yum install -y ansible gcc rsync openssh-clients && \
   cd /tmp && \
   curl -L -o vagrant.rpm https://releases.hashicorp.com/vagrant/${VAGRANT_VERSION}/vagrant_${VAGRANT_VERSION}_x86_64.rpm && \
