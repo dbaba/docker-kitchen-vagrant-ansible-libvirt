@@ -72,6 +72,9 @@ You can prepend a relative path to a vagrant file name, e.g. files/qemu-workarou
 
 # Revision History
 
+* 1.0.2
+    - Skip to remove gcc in order for gem to use it
+
 * 1.0.1
     - Fix an issue where gem complained of building native extensions
 
