@@ -26,7 +26,7 @@ RUN ( \
   gem install bundler && \
   bundle install && \
   mkdir -p /app && \
-  yum remove -y gcc epel-release && \
+  yum remove -y epel-release && \
   yum clean all && \
   cd /tmp/ && \
   rm -fr * \
